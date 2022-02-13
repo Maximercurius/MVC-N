@@ -9,14 +9,20 @@
 /* Begin PBXBuildFile section */
 		00CE560527B2CDE300D12E07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CE560427B2CDE300D12E07 /* AppDelegate.swift */; };
 		00CE560727B2CDE300D12E07 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CE560627B2CDE300D12E07 /* SceneDelegate.swift */; };
-		00CE560927B2CDE300D12E07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CE560827B2CDE300D12E07 /* ViewController.swift */; };
-		00CE560C27B2CDE300D12E07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00CE560A27B2CDE300D12E07 /* Main.storyboard */; };
+		00CE560927B2CDE300D12E07 /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CE560827B2CDE300D12E07 /* CommentsViewController.swift */; };
+		00CE560C27B2CDE300D12E07 /* Comments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00CE560A27B2CDE300D12E07 /* Comments.storyboard */; };
 		00CE560F27B2CDE300D12E07 /* MVC_N.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00CE560D27B2CDE300D12E07 /* MVC_N.xcdatamodeld */; };
 		00CE561127B2CDE900D12E07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00CE561027B2CDE900D12E07 /* Assets.xcassets */; };
 		00CE561427B2CDE900D12E07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00CE561227B2CDE900D12E07 /* LaunchScreen.storyboard */; };
 		00CE561F27B2CDEA00D12E07 /* MVC_NTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CE561E27B2CDEA00D12E07 /* MVC_NTests.swift */; };
 		00CE562927B2CDEA00D12E07 /* MVC_NUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CE562827B2CDEA00D12E07 /* MVC_NUITests.swift */; };
 		00CE562B27B2CDEA00D12E07 /* MVC_NUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CE562A27B2CDEA00D12E07 /* MVC_NUITestsLaunchTests.swift */; };
+		00CE564127B2D83F00D12E07 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CE564027B2D83F00D12E07 /* CommentCell.swift */; };
+		00CE564327B2D9BC00D12E07 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CE564227B2D9BC00D12E07 /* Comment.swift */; };
+		00CE564627B2E2EC00D12E07 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CE564527B2E2EC00D12E07 /* NetworkService.swift */; };
+		00CE564927B2E6EE00D12E07 /* CommentNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CE564827B2E6EE00D12E07 /* CommentNetworkService.swift */; };
+		00CE564B27B2E7ED00D12E07 /* GetCommentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CE564A27B2E7ED00D12E07 /* GetCommentResponse.swift */; };
+		00CE564E27B2E9FA00D12E07 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CE564D27B2E9FA00D12E07 /* NetworkError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +46,8 @@
 		00CE560127B2CDE300D12E07 /* MVC-N.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVC-N.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00CE560427B2CDE300D12E07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00CE560627B2CDE300D12E07 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		00CE560827B2CDE300D12E07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		00CE560B27B2CDE300D12E07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		00CE560827B2CDE300D12E07 /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
+		00CE560B27B2CDE300D12E07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Comments.storyboard; sourceTree = "<group>"; };
 		00CE560E27B2CDE300D12E07 /* MVC_N.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MVC_N.xcdatamodel; sourceTree = "<group>"; };
 		00CE561027B2CDE900D12E07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00CE561327B2CDE900D12E07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +57,12 @@
 		00CE562427B2CDEA00D12E07 /* MVC-NUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVC-NUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00CE562827B2CDEA00D12E07 /* MVC_NUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVC_NUITests.swift; sourceTree = "<group>"; };
 		00CE562A27B2CDEA00D12E07 /* MVC_NUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVC_NUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		00CE564027B2D83F00D12E07 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		00CE564227B2D9BC00D12E07 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		00CE564527B2E2EC00D12E07 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		00CE564827B2E6EE00D12E07 /* CommentNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentNetworkService.swift; sourceTree = "<group>"; };
+		00CE564A27B2E7ED00D12E07 /* GetCommentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCommentResponse.swift; sourceTree = "<group>"; };
+		00CE564D27B2E9FA00D12E07 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,13 +113,10 @@
 		00CE560327B2CDE300D12E07 /* MVC-N */ = {
 			isa = PBXGroup;
 			children = (
-				00CE560427B2CDE300D12E07 /* AppDelegate.swift */,
+				00CE563A27B2CE3900D12E07 /* Application */,
+				00CE563B27B2CE8E00D12E07 /* Comments */,
 				00CE560627B2CDE300D12E07 /* SceneDelegate.swift */,
-				00CE560827B2CDE300D12E07 /* ViewController.swift */,
-				00CE560A27B2CDE300D12E07 /* Main.storyboard */,
-				00CE561027B2CDE900D12E07 /* Assets.xcassets */,
-				00CE561227B2CDE900D12E07 /* LaunchScreen.storyboard */,
-				00CE561527B2CDE900D12E07 /* Info.plist */,
+				00CE563F27B2CF7400D12E07 /* Supporting Files */,
 				00CE560D27B2CDE300D12E07 /* MVC_N.xcdatamodeld */,
 			);
 			path = "MVC-N";
@@ -128,6 +137,111 @@
 				00CE562A27B2CDEA00D12E07 /* MVC_NUITestsLaunchTests.swift */,
 			);
 			path = "MVC-NUITests";
+			sourceTree = "<group>";
+		};
+		00CE563727B2CE0200D12E07 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				00CE564D27B2E9FA00D12E07 /* NetworkError.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		00CE563827B2CE0C00D12E07 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				00CE561227B2CDE900D12E07 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		00CE563927B2CE1300D12E07 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				00CE560427B2CDE300D12E07 /* AppDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		00CE563A27B2CE3900D12E07 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				00CE563727B2CE0200D12E07 /* Model */,
+				00CE563827B2CE0C00D12E07 /* View */,
+				00CE563927B2CE1300D12E07 /* Controller */,
+				00CE564427B2E2CF00D12E07 /* NetworkService */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		00CE563B27B2CE8E00D12E07 /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+				00CE563E27B2CEB400D12E07 /* Model */,
+				00CE563D27B2CEAE00D12E07 /* View */,
+				00CE563C27B2CEA100D12E07 /* Controller */,
+				00CE564727B2E6A700D12E07 /* CommentNetworkService */,
+			);
+			path = Comments;
+			sourceTree = "<group>";
+		};
+		00CE563C27B2CEA100D12E07 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				00CE560827B2CDE300D12E07 /* CommentsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		00CE563D27B2CEAE00D12E07 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				00CE560A27B2CDE300D12E07 /* Comments.storyboard */,
+				00CE564027B2D83F00D12E07 /* CommentCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		00CE563E27B2CEB400D12E07 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				00CE564C27B2E92900D12E07 /* Responses */,
+				00CE564227B2D9BC00D12E07 /* Comment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		00CE563F27B2CF7400D12E07 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00CE561027B2CDE900D12E07 /* Assets.xcassets */,
+				00CE561527B2CDE900D12E07 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		00CE564427B2E2CF00D12E07 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				00CE564527B2E2EC00D12E07 /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		00CE564727B2E6A700D12E07 /* CommentNetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				00CE564827B2E6EE00D12E07 /* CommentNetworkService.swift */,
+			);
+			path = CommentNetworkService;
+			sourceTree = "<group>";
+		};
+		00CE564C27B2E92900D12E07 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				00CE564A27B2E7ED00D12E07 /* GetCommentResponse.swift */,
+			);
+			path = Responses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +350,7 @@
 			files = (
 				00CE561427B2CDE900D12E07 /* LaunchScreen.storyboard in Resources */,
 				00CE561127B2CDE900D12E07 /* Assets.xcassets in Resources */,
-				00CE560C27B2CDE300D12E07 /* Main.storyboard in Resources */,
+				00CE560C27B2CDE300D12E07 /* Comments.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +375,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00CE560927B2CDE300D12E07 /* ViewController.swift in Sources */,
+				00CE564127B2D83F00D12E07 /* CommentCell.swift in Sources */,
+				00CE564327B2D9BC00D12E07 /* Comment.swift in Sources */,
+				00CE560927B2CDE300D12E07 /* CommentsViewController.swift in Sources */,
 				00CE560F27B2CDE300D12E07 /* MVC_N.xcdatamodeld in Sources */,
+				00CE564927B2E6EE00D12E07 /* CommentNetworkService.swift in Sources */,
 				00CE560527B2CDE300D12E07 /* AppDelegate.swift in Sources */,
 				00CE560727B2CDE300D12E07 /* SceneDelegate.swift in Sources */,
+				00CE564627B2E2EC00D12E07 /* NetworkService.swift in Sources */,
+				00CE564B27B2E7ED00D12E07 /* GetCommentResponse.swift in Sources */,
+				00CE564E27B2E9FA00D12E07 /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,12 +421,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		00CE560A27B2CDE300D12E07 /* Main.storyboard */ = {
+		00CE560A27B2CDE300D12E07 /* Comments.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				00CE560B27B2CDE300D12E07 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Comments.storyboard;
 			sourceTree = "<group>";
 		};
 		00CE561227B2CDE900D12E07 /* LaunchScreen.storyboard */ = {
@@ -444,10 +564,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "MVC-N/Info.plist";
+				INFOPLIST_FILE = "MVC-N/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Comments;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -459,7 +580,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -471,10 +592,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "MVC-N/Info.plist";
+				INFOPLIST_FILE = "MVC-N/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Comments;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -486,7 +608,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -538,6 +660,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "FilGudInc.MVC-NUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -555,6 +678,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "FilGudInc.MVC-NUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
